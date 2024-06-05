@@ -41,17 +41,14 @@ replace Int operators, such as `+` and `>`.
 
 1. For **each of the `pairN` directories**:
 
-   a. **Examine the original and mutated program in the `pair1/` directory.**
-
+   a. **Examine the original and mutated program in the `pairN/` directory.**
       Are they equivalent? (See Question 1 below.)
 
-   b. **Complete `Z3startercode.pairN.smt2` (see hints below!).**
-
+   b. **Complete `Z3startercode.pairN.smt2`.**
       Your completed code should either prove equivalence of the two programs or
       generate a model (test case) that proves non-equivalence.
 
    c. **Test your code by running it with Z3.**
-
       Run the `.smt2` file with Z3.
 
 2. For the **`set1/` directory**:
