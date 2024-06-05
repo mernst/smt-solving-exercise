@@ -41,36 +41,36 @@ replace Int operators, such as `+` and `>`.
 
 1. For **each of the `pairN` directories**:
 
-    a. **Examine the original and mutated program in the `pair1` directory.**
+   a. **Examine the original and mutated program in the `pair1/` directory.**
 
-	Are they equivalent? (See Question 1 below.)
+       Are they equivalent? (See Question 1 below.)
 
-    b. **Complete `Z3startercode.pairN.smt2` (see hints below!).**
+   b. **Complete `Z3startercode.pairN.smt2` (see hints below!).**
 
-	Your completed code should either prove equivalence of the two programs or
-	generate a model (test case) that proves non-equivalence.
+       Your completed code should either prove equivalence of the two programs or
+       generate a model (test case) that proves non-equivalence.
 
-    c. **Test your code by running it with Z3.**
+   c. **Test your code by running it with Z3.**
 
-	Run the `.smt2` file with Z3.
+       Run the `.smt2` file with Z3.
 
-2.
+2. For the **`set1/` directory**:
 
-    a. **Examine the four mutants in the `set1` directory.**
+   a. **Examine the mutants in the `set1/` directory.**
 
-    b. **Use scopes to complete Z3startercode.set1.smt2.**
-       Your completed code should, for each mutant, either prove equivalence or
-       generate a model (test case) that proves non-equivalence.  (See Question 2
-       and 3 below.)
+   b. **Use scopes to complete Z3startercode.set1.smt2.**
+      Your completed code should, for each mutant, either prove equivalence or
+      generate a model (test case) that proves non-equivalence.  (See Question 2
+      and 3 below.)
 
-       Recall what you learned about [Z3
-       scopes](https://www.philipzucker.com/z3-rise4fun/guide.html) from the [Z3
-       Tutorial](https://www.philipzucker.com/z3-rise4fun/guide.html).  Scopes will
-       make your code much shorter, because they permit you to reuse constraints
-       for code that is identical between the original program and the mutant
-       programs.
+      Recall what you learned about [Z3
+      scopes](https://www.philipzucker.com/z3-rise4fun/guide.html) from the [Z3
+      Tutorial](https://www.philipzucker.com/z3-rise4fun/guide.html).  Scopes will
+      make your code much shorter, because they permit you to reuse constraints
+      for code that is identical between the original program and the mutant
+      programs.
 
-    c. **Test your code by running it with Z3.**
+   c. **Test your code by running it with Z3.**
 
 ## Questions
 
