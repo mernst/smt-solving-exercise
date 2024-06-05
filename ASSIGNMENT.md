@@ -1,6 +1,4 @@
----
-title: SMT solving exercise
----
+# SMT solving exercise
 
 ## Goal
 
@@ -29,19 +27,19 @@ program properties, and generate test cases.
 ## Instructions
 
 In this repository:
- * Each `pair_N_` directory contains a program, a mutated
+ * Each `pairN` directory contains a program, a mutated
    version named `Mutant.java`, and z3 starter code for comparing the two.
- * Each `set_N_` directory contains an original program, a
+ * Each `setN` directory contains an original program, a
    set of four mutants in `Mutants.java`, and z3 starter code.
 
-All of the code in this exercises uses width-8 `BitVec`s instead of 32 or 64
+All of the code in this exercise uses width-8 `BitVec`s instead of 32 or 64
 bits. This is for speed of execution and for ease of reading/writing/reasoning:
 the principles are the same, but are a little easier to grok at this lower
 precision. Recall the `BitVec` operators, such as `bvadd` and `bvsgt`, that
 replace Int operators, such as `+` and `>`.
 
 
-1. For **each of the `pair_N_` directories**:
+1. For **each of the `pairN` directories**:
 
     a. **Examine the original and mutated program in the `pair1` directory.**
 
@@ -54,34 +52,36 @@ replace Int operators, such as `+` and `>`.
 
     c. **Test your code by running it with Z3.**
 
-	Run the `.smt2` file with Z3. You can copy the entire contents of the file
-	into the web interface and run it there.
+	Run the `.smt2` file with Z3.
 
-4. **Examine the four mutants in the `set1` directory.**
+2.
 
-5. **Use scopes to complete Z3startercode.set1.smt2.**
-   Your completed code should, for each mutant, either prove equivalence or
-   generate a model (test case) that proves non-equivalence.  (See Question 2
-   and 3 below.)
+    a. **Examine the four mutants in the `set1` directory.**
 
-   Recall what you learned about [Z3
-   scopes](https://www.philipzucker.com/z3-rise4fun/guide.html).  Scopes will
-   make your code much shorter, because they permits you to reuse constraints
-   for code that is identical between the original program and the mutant
-   programs.
+    b. **Use scopes to complete Z3startercode.set1.smt2.**
+       Your completed code should, for each mutant, either prove equivalence or
+       generate a model (test case) that proves non-equivalence.  (See Question 2
+       and 3 below.)
 
-6. **Test your code by running it with Z3.**
+       Recall what you learned about [Z3
+       scopes](https://www.philipzucker.com/z3-rise4fun/guide.html) from the [Z3
+       Tutorial](https://www.philipzucker.com/z3-rise4fun/guide.html).  Scopes will
+       make your code much shorter, because they permit you to reuse constraints
+       for code that is identical between the original program and the mutant
+       programs.
+
+    c. **Test your code by running it with Z3.**
 
 ## Questions
 
-1. Which of the mutants in pair1, pair2, and pair3 are equivalent? Provide, for
+1. Which of the mutants in `pair1/`, `pair2/`, and `pair3/` are equivalent? Provide, for
 each non-equivalent mutant, a test case that detects it.
 The test case should be the output of the `(get-model)` instruction in your `smt2` code.
 
-2. Which of the four mutants in set1 are equivalent? Provide, for each
+2. Which of the four mutants in `set1/` are equivalent? Provide, for each
 non-equivalent mutant, a test case that detects it.
 
-3. Briefly explain how scopes work in Z3 and when they are useful.
+3. In your own words, briefly explain how scopes work in Z3 and when they are useful.
 
 
 ## Hints
