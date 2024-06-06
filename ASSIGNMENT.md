@@ -30,7 +30,7 @@ In this repository:
  * Each `pairN` directory contains a program, a mutated
    version named `Mutant.java`, and z3 starter code for comparing the two.
  * Each `setN` directory contains an original program, a
-   set of four mutants in `Mutants.java`, and z3 starter code.
+   set of mutants in `Mutants.java`, and z3 starter code.
 
 All of the code in this exercise uses width-8 `BitVec`s instead of 32 or 64
 bits. This is for speed of execution and for ease of reading/writing/reasoning:
@@ -75,7 +75,7 @@ replace Int operators, such as `+` and `>`.
 each non-equivalent mutant, a test case that detects it.
 The test case should be the output of the `(get-model)` instruction in your `smt2` code.
 
-2. Which of the four mutants in `set1/` are equivalent? Provide, for each
+2. Which of the mutants in `set1/` are equivalent? Provide, for each
 non-equivalent mutant, a test case that detects it.
 
 3. In your own words, briefly explain how scopes work in Z3 and when they are useful.
